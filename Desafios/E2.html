@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2</title>
+</head>
+<body>
+
+    <script>
+
+        funcaoEscolha()
+
+       function funcaoEscolha(){
+
+        var escolhaFuncao =  window.prompt('Digite 1 para escolher a função de soma, digite 2 para a função de subtração')
+
+        switch (escolhaFuncao){
+            case '1' : soma()
+            case '2' : subtracao()
+            default: window.alert('Função não definida')
+        }
+           
+        }
+
+        function soma(x, y){
+            var x = window.prompt('Digite o primeiro número')
+            var y = window.prompt('Digite o segundo número')
+            var z = parseFloat(x) + parseFloat(y)
+            window.alert('A soma de ' + x + ' e ' + y + ' é ' + z)
+        }
+
+
+        function subtracao(x, y){
+            var x = window.prompt('Digite o primeiro número')
+            var y = window.prompt('Digite o segundo número')
+            var z = parseFloat(x) - parseFloat(y)
+            window.alert('A subtração de ' + x + ' e ' + y + ' é ' + z)
+        }
+        
+
+
+    </script>
+</body>
+</html>
