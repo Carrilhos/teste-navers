@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    
+    <script>
+
+
+        const nomes =  [
+            {id: 1, nome: 'juca', sobrenome: 'da silva', idade: 42},
+            {id: 2, nome: 'daniel', sobrenome: 'gonçalves',  idade: 21},
+            {id:3, nome: 'matheus', sobrenome: 'garcia', idade: 28},
+            {id: 4, nome: 'gabriel', sobrenome: 'pinheiro',  idade: 21}
+            ]
+            
+        
+        const pessoasAgrupadas = nomes.reduce(function(valorAcumulador, valorArray){
+            const maiorOuMenor = valorArray.idade >= 30 ? 'maiores' : 'menores'
+            
+
+            valorAcumulador[maiorOuMenor].push(valorArray)
+
+            return valorAcumulador
+        }, {menores : [], maiores : []})
+
+        for(var i = 0; i<=3; i++){
+            console.log(pessoasAgrupadas.menores[i])
+        }
+        
+
+        
+
+
+    </script>
+
+</body>
+</html>
+
+  
+
